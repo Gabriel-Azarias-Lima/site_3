@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+  font-family: 'EB Garamond', serif;
+  background-image: url(../imagem/fundo_coelho.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+}
+
+
+/* Edição do header */
+
+header {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+}
+
+.container_header {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+
+@media screen and (max-width: 1280px) {
+  .container_header img {
+    width: 80px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container_header img {
+    width: 70px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .container_header img {
+    width: 50px;
+  }
+}
+
+
+
+
+
+.container_header h1 { /* edita o nome da logo */
+  font-size: 26px;
+  color: #fff;
+}
+
+.container_header h1:hover{ /* Adiciona uma borda no nome da logo */
+  border-bottom: 2px solid #fff;
+}
+
+.logo { 
+  display: inline-block;
+}
+
+.header_redes { /* move as redes para a direita e centraliza */
+  margin-left: 60%;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.header_redes{ /* modifica a cor do h2 e o tamanho da letra  */
+  font-size: 13px;
+  color: #fff;
+}
+
+/* Inicio edição dos icones das redes */
+.redes { 
+  display: flex;
+  gap: 2rem;
+  margin-top: 1.2rem;
+}
+
+.redes .footer-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2rem; /* modifica o tamanho das cores dos icones */
+  width: 2rem;  /* modifica o tamanho das cores dos icones */
+  color: #f5f5f5;
+  border-radius: 50%;
+  transition: all 0.4s;
+}
+
+.footer-link {
+  text-decoration: none;
+}
+
+.redes .footer-link i {
+  font-size: 1rem; /* modifica o tamanho dos icones */
+}
+
+.redes .footer-link:hover {
+  opacity: 0.8;
+}
+
+#instagram {
+  background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+}
+
+#facebook {
+  background-color: #4267b3;
+}
+
+#github {
+  background-color: black;
+}
+
+
+
+/* Redimencionando o logo e redes */
+@media only screen and (max-width: 1280px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+
+  .container_header {
+    flex-direction: column;
+    align-items: center;
+   
+  }
+
+  .header_redes {
+    margin: 0;
+    padding-bottom: px;
+  }
+
+  .redes .footer-link{
+    height: 1.40rem;
+    width: 1.40rem;
+  }
+
+  .redes .footer-link i{
+    font-size: 1rem;
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+
+  .container_header {
+    flex-direction: column;
+    align-items: center;
+   
+  }
+
+  .header_redes {
+    margin: 0;
+    padding-bottom: px;
+  }
+
+}
+
+@media only screen and (max-width: 320px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+
+  .container_header {
+    flex-direction: column;
+    align-items: center;
+   
+  }
+
+  .header_redes {
+    margin: 0;
+    padding-bottom: px;
+  }
+
+}
+/* FIM Inicio edição dos icones das redes */
+  /* FIM Edição do header */
+
+
+
+
+
+    /* Edição Imagem do Meio */
+
+    .container_meio_img {
+      width: 100%;
+      background-image: url(../imagem/pascoa_overlay.jpg);
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      padding-bottom: 15%;
+    }
+
+    /* Redimencionando Imagem container_meio_img */
+    @media only screen and (max-width: 1280px) {
+      .container_meio_img {
+        background-size: 100% 100%;
+        padding-bottom: 30%;
+      }
+    }
+
+    @media only screen and (max-width: 768px) {
+      .container_meio_img {
+        background-size: 100% 100%;
+        padding-bottom: 26%;
+      }
+    }
+
+    .container_meio_texto{
+      padding-top: 15%;
+      font-size: 40px;
+      padding-left: 55%;
+      color: #f5f5f5;
+    }
+
+    /* Redimencionando Imagem .container_meio_texto */
+    @media screen and (max-width: 1280px) {
+      .container_meio_texto {
+        font-size: 30px;
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      .container_meio_texto {
+        font-size: 25px;
+        padding-top: 30%;
+        padding-left: 49%;
+      }
+    }
+
+    @media screen and (max-width: 320px) {
+      .container_meio_texto {
+        font-size: 10px;
+      }
+    }
+
+  /* FIM Edição Imagem do Meio */
+    
+
+
+
+
+  /* Novidades */
+    
+ .container_novidades{
+  padding: 1rem; margin: 1rem;
+  padding-top: 50px;
+ }
+
+ .container_novidades h1{
+  color: #fff;
+ }
+
+ @media screen and (max-width: 768px) {
+  .container_novidades h1 {
+    font-size: 20px;
+  }
+}
+
+
+/* Caroucel Novidades */
+
+.gallery {
+  background-image: url(../imagem/fundo_cesta.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .gallery {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+.gallery-cell{ /* adicionando borda */
+  border-radius: 10px;
+}
+
+.gallery-cell img{ /* adicionando borda */
+  border-radius: 10px;
+}
+
+.gallery-cell{
+  width: 66%;
+  height: 250px;
+  margin-right: 10px;
+  counter-increment: gallery-cell;
+}
+
+@media screen and (max-width: 768px) {
+  .gallery-cell {
+    width: 100%;
+    height: 150px;
+    margin-right: 300px;
+  }
+}
+
+  /* Fim novidades */
+
+
+  /* Cardápio */
+
+  .container-cardapio{
+    padding: 1rem; margin: 1rem;
+    padding-top: 50px;
+  }
+
+  .container-cardapio h1{
+    color: #fff;
+  }
+
+  @media screen and (max-width: 768px) {
+    .container-cardapio h1 {
+      font-size: 20px;
+    }
+  }
+  
+
+  /* Fim cardápio */
+
+
