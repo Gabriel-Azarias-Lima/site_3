@@ -53,6 +53,32 @@
         <h1 class="container_meio_texto">A vida bem mais Feliz com um Docinho</h1> 
     </div>
 
+    <script>
+        const containerMeioImg = document.querySelector('.container_meio_img');
+        let lastScrollY = window.scrollY;
+
+        function handleScroll() {
+        const scrollY = window.scrollY;
+        const elementTop = containerMeioImg.offsetTop;
+        const elementHeight = containerMeioImg.offsetHeight;
+
+        if (
+        scrollY > (elementTop - (elementHeight / 2)) &&
+        lastScrollY <= scrollY
+        ) {
+        containerMeioImg.classList.add('active');
+        containerMeioImg.classList.remove('transition');
+        } else {
+        containerMeioImg.classList.remove('active');
+        containerMeioImg.classList.add('transition');
+        }
+
+        lastScrollY = scrollY;
+        }
+
+        window.addEventListener('scroll', handleScroll);
+    </script>
+
     
 
 
