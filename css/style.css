@@ -281,7 +281,7 @@ header {
 
  @media screen and (max-width: 768px) {
   .container_novidades h1 {
-    font-size: 20px;
+    font-size: 26px;
   }
 }
 
@@ -295,6 +295,7 @@ header {
   background-repeat: no-repeat;
   padding-top: 50px;
   padding-bottom: 50px;
+  margin-bottom: 100px;
 }
 
 @media screen and (max-width: 768px) {
@@ -333,8 +334,16 @@ header {
   /* Cardápio */
 
   .container-cardapio{
-    padding: 1rem; margin: 1rem;
+    margin-top: 100px;
     padding-top: 50px;
+    background-color: #e8a3c4;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 15px;
+  }
+
+  .container-cardapio .cardapio-h1{
+    text-align: center;
   }
 
   .container-cardapio h1{
@@ -343,11 +352,472 @@ header {
 
   @media screen and (max-width: 768px) {
     .container-cardapio h1 {
-      font-size: 20px;
+      font-size: 26px;
+    }
+  }
+
+  .tipo_cardapio{
+    margin: 1rem; padding: 1rem;
+    padding-top: 50px;
+    color: #fff;
+  }
+
+  .cardapio-doces{ /* modificando icones do doces */
+    display: flex;
+    align-items: center;
+  }
+
+  .cardapio-doces img {
+    padding-top: 40px;
+    width:50px;
+
+  }
+
+  .cardapio-doces blockquote{
+    margin-left: -1%;
+  }
+
+  @media screen and (max-width: 768px) {
+    .cardapio-doces img {
+      width:35px;
+      padding-top: 35px;
+    }
+
+    .cardapio-doces blockquote{
+      margin-left: -4%;
     }
   }
   
 
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card {
+    background-color: #ffddf8;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    flex-grow: 1;
+    max-width: 400px;
+  }
+
+
+  .card img {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .card h2 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #333;
+  }
+
+  .card-p1 {
+    margin-bottom: 0;
+    font-size: 18px;
+    color: #666;
+    padding-bottom: 40px;
+    padding-top: 0px;
+    text-align: left;
+  }
+
+  .card-p2{
+    margin-bottom: 0;
+    font-size: 25px;
+    color: #434242;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    text-align: center;
+  }
+
+  .card-p3{
+    font-size: 20px;
+    color: #434242;
+    padding-bottom: 20px;
+  }
+
+  .card ul{
+    text-align: left;
+  
+  }
+
+  .card button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-top: auto; /* alinha o botão à parte inferior do card */
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+
+  }
+
+  .card button:hover {
+    background-color: #357a38;
+  }
+
+
+  /* Icones Novidade pascoa */
+
+  .cardapio-novidade {
+    display: flex;
+    align-items: center;
+
+  }
+  
+  .cardapio-novidade img {
+    padding-top: 10px;
+    width:70px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .cardapio-novidade img {
+      width:50px;
+      padding-top: 15px;
+    }
+  }
+
+
+  .cardapio-novidade{ /* modificando icones do doces */
+    display: flex;
+    align-items: center;
+  }
+
+  .cardapio-novidade img {
+    padding-top: 25px;
+    width:50px;
+
+  }
+
+  .cardapio-novidade blockquote{
+    margin-left: -1%;
+  }
+
+  @media screen and (max-width: 768px) {
+    .cardapio-novidade img {
+      width:35px;
+      padding-top: 30px;
+    }
+
+    .cardapio-novidade blockquote{
+      margin-left: -4%;
+    }
+  }
+
   /* Fim cardápio */
+
+
+
+
+  /* pagina sorteio */
+
+
+  .container_sorteio_meio {
+    width: 100%;
+    background-image: url(../imagem/sorteio.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-bottom: 30%;
+    margin-top: 7%;
+  }
+
+  /* Redimencionando Imagem container_meio_img */
+  @media only screen and (max-width: 1280px) {
+    .container_sorteio_meio {
+      background-size: 100% 100%;
+      padding-bottom: 30%;
+      margin-top: 5%;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .container_sorteio_meio {
+      background-size: 100% 100%;
+      padding-bottom: 70%;
+      margin-top: 15%;
+    }
+  }
+
+  .sorteio{
+    margin: 1rem;
+    padding: 1rem;
+    margin-top: 100px;
+  }
+
+  .sorteio h1 {
+    color: #fff;
+  }
+
+  .container-sorteio{
+    margin: 1rem;
+    padding: 1rem;
+    display: flex;
+    justify-self: center;
+    background-color: #ffb5f0;
+    
+  }
+
+  .container-sorteio .rifa{
+    padding-left: 20%;
+  }
+
+  .rifa{
+    padding-top: 200px;
+    text-align: center;
+  }
+
+  .rifa h1{
+    padding-bottom: 30px;
+    font-size: 40px;
+    color: #fff;
+  }
+
+  .rifa li{
+    font-size: 30px;
+    color: #fff;
+    text-align: left;
+  }
+
+
+
+.btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.btn:hover {
+  background-color: #357a38;
+}
+
+/* tornando responsivo */
+@media (max-width: 1280px) {
+  .container-sorteio {
+    flex-direction: column;
+    align-items: center;
+    
+  }
+
+  .container-sorteio img{
+    width: 60%;
+  }
+
+  .rifa{
+    padding-top: 20px;
+  }
+
+  .container-sorteio .rifa{
+    padding-left: 0;
+  }
+}
+
+
+
+@media (max-width: 765px) {
+  .container-sorteio {
+    flex-direction: column;
+    align-items: center;
+    
+  }
+
+  .container-sorteio img{
+    width: 100%;
+  }
+
+  .rifa{
+    padding-top: 20px;
+  }
+
+  .container-sorteio .rifa{
+    padding-left: 0;
+  }
+}
+
+
+@media (max-width: 765px) {
+  .rifa h1{
+    font-size: 30px;
+  }
+
+  .rifa li{
+    font-size: 20px;
+  }
+}
+
+
+
+
+  /* Fim pagina Sorteio */
+
+
+
+
+
+  /* Footer */
+
+  :root{
+  /* nome da variavel | cor-variavel*/
+    --color-neutral-0: #0e0c0c;
+    --color-neutral-10: #171717;
+    --color-neutral-30: #a8a29e;
+    --color-neutral-40: #f5f5f5;
+}
+
+  footer {
+    width: 100%;
+    /* aplicando a variavel */
+    color: var(--color-neutral-40);
+}
+
+.footer-link{
+    text-decoration: none;
+}
+
+#footer_content{
+    background-color: var(--color-neutral-10);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 3rem 3.5rem;
+}
+
+#footer_contacts{
+    margin-bottom: 0.75rem;
+}
+
+.footer_social_media{
+    display: flex;
+    gap: 2rem; /*define os espaços entre as linhas e colunas*/
+    margin-top: 1.5rem;
+}
+
+.footer_social_media .footer-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    color: var(--color-neutral-40);
+    border-radius: 50%; /* faz uma borda redonda envolta dos icones */
+    transition: all 0.4s; /* adiciona uma transição ao passar o mause nos icones */
+}
+
+.footer_social_media .footer-link i{ /* muda o tamanho dos icones */
+    font-size: 1.25rem;
+}
+
+.footer_social_media .footer-link:hover{ /* adiciona opacidade ao passar o mouse nos icones */
+    opacity: 0.8;
+}
+
+#instagram { /* muda a cor de fundo do instagram */
+    background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+}
+
+#facebook{ /* muda a cor de fundo do facebook */
+    background-color: #4267b3;
+}
+
+#github{ /* muda a cor de fundo do github */
+    background-color: black;
+}
+
+.footer_list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    list-style: none;
+}
+
+.footer_list .footer-link{
+    color: var(--color-neutral-30);
+    transition: all 0.4s;
+}
+
+.footer_list .footer-link:hover{
+    color: #7f37c9;
+}
+
+#footer_subscribe{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+#footer_subscribe p{
+    color: var(--color-neutral-30);
+    
+}
+
+#input_group {
+    display: flex;
+    align-items: center;
+    background-color: var(--color-neutral-0);
+    border-radius: 4px;
+}
+
+#input_group input{
+    all:unset;
+    padding: 0.75rem;
+    width: 100%;
+}
+
+#input_group button{
+    background-color: #7f37c9;
+    border: none;
+    color: var(--color-neutral-40);
+    padding: 0px 1.25rem;
+    font-size: 1.125rem;
+    height: 100%;
+    border-radius: 0px 4px 4px 0px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+#input_group button:hover{
+    opacity: 0.8;
+}
+
+#footer_copyright{
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-neutral-0);
+    font-size: 0.9rem;
+    padding: 1.5rem;
+    font-weight: 100;
+}
+
+@media screen and (max-width: 768px) {
+    #footer_content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    #footer_content {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 3rem 2rem;
+    }
+}
+
+  /* Fim footer */
 
 

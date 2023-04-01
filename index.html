@@ -25,7 +25,9 @@
     <header>
         <div class="container_header">
             <a href="index.html"><img class="logo" src="icones/chefe-de-cozinha.png" alt="" width="100px"></a>
-            <a href="index.html"><h1 class="logo">Delícias da Léia</h1></a>
+            <a href="index.html">
+                <h1 class="logo">Delícias da Léia</h1>
+            </a>
         </div>
 
         <div class="header_redes">
@@ -50,7 +52,7 @@
     </header>
 
     <div class="container_meio_img">
-        <h1 class="container_meio_texto">A vida bem mais Feliz com um Docinho</h1> 
+        <h1 class="container_meio_texto">A vida bem mais Feliz com um Docinho</h1>
     </div>
 
     <script>
@@ -58,48 +60,244 @@
         let lastScrollY = window.scrollY;
 
         function handleScroll() {
-        const scrollY = window.scrollY;
-        const elementTop = containerMeioImg.offsetTop;
-        const elementHeight = containerMeioImg.offsetHeight;
+            const scrollY = window.scrollY;
+            const elementTop = containerMeioImg.offsetTop;
+            const elementHeight = containerMeioImg.offsetHeight;
 
-        if (
-        scrollY > (elementTop - (elementHeight / 2)) &&
-        lastScrollY <= scrollY
-        ) {
-        containerMeioImg.classList.add('active');
-        containerMeioImg.classList.remove('transition');
-        } else {
-        containerMeioImg.classList.remove('active');
-        containerMeioImg.classList.add('transition');
-        }
+            if (
+                scrollY > (elementTop - (elementHeight / 2)) &&
+                lastScrollY <= scrollY
+            ) {
+                containerMeioImg.classList.add('active');
+                containerMeioImg.classList.remove('transition');
+            } else {
+                containerMeioImg.classList.remove('active');
+                containerMeioImg.classList.add('transition');
+            }
 
-        lastScrollY = scrollY;
+            lastScrollY = scrollY;
         }
 
         window.addEventListener('scroll', handleScroll);
     </script>
 
-    
+
 
 
     <div class="container_novidades">
         <h1>Novidades</h1>
-        
+
     </div>
     <div class="carousel">
         <!-- Flickity HTML init -->
         <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
-            <div class="gallery-cell"><img src="imagem/super_pascoa.jpg" width="100%" height="100%" alt=""></div>
-            <div class="gallery-cell"><img src="imagem/concorra_rifa.jpg" width="100%" height="100%" alt=""></div>
-            <div class="gallery-cell"><img src="imagem/sobre_cesta.jpg" width="100%" height="100%" alt=""></div>
+            <div class="gallery-cell"><a href="sorteio.html"><img src="imagem/super_pascoa.jpg" width="100%" height="100%" alt=""></a></div>
+            <div class="gallery-cell"><a href="sorteio.html"><img src="imagem/concorra_rifa.jpg" width="100%" height="100%" alt=""></a></div>
+            <div class="gallery-cell"><a href="sorteio.html"><img src="imagem/sobre_cesta.jpg" width="100%" height="100%" alt=""></a></div>
         </div>
     </div>
 
 
 
     <div class="container-cardapio">
-        <h1>Cardápio</h1>
+        <h1 class="cardapio-h1">CARDÁPIOS</h1>
+
+        <div class="cardapio-doces">
+            <h1 class="tipo_cardapio">Doces</h1>
+            <blockquote cite="https://www.flaticon.com/br/icones-gratis/queque-de-aniversario - Queque de aniversário ícones criados por Flat Icons - Flaticon">
+                <img src="icones/bolos-de-copo.png" alt="doces">
+            </blockquote>
+        </div>
+
+        <div class="container">
+            <div class="card">
+                <img src="imagem/trufas.jpg" alt="trufas">
+                <h2>Trufas</h2>
+                <p class="card-p1">Deliciosas trufas com sabores de:
+                <ul>
+                    <li>Chocolate</li>
+                    <li>Cocô</li>
+                    <li>Leite Ninho</li>
+                    <li>Maracujá</li>
+                </ul>
+                </p>
+                <p class="card-p2">Por: R$ 3,50</p>
+                <button>Fazer Pedido</button>
+            </div>
+            <div class="card">
+                <img src="imagem/torta_pote.jpg" alt="torta no Pote">
+                <h2>Torta no Pote</h2>
+                <p class="card-p1">Deliciosas Tortas de Bolacha com Sabores de:
+                <ul>
+                    <li>Chocolate com Ninho</li>
+                    <li>Cocô com chocolate</li>
+                    <li>Maracujá com Chocolate</li>
+                    <br>
+                </ul>
+                </p>
+                <p class="card-p2">Por: R$ 7,50</p>
+                <button>Fazer Pedido</button>
+            </div>
+            <div class="card">
+                <img src="imagem/cones.jpg" alt="Cones Trufados">
+                <h2>Cones Trufados</h2>
+                <p class="card-p1">Deliciosos Cones Trufados com Sabores de:
+                <ul>
+                    <li>Chocolate</li>
+                    <li>Cocô</li>
+                    <li>Leite Ninho c/ Nutella</li>
+                    <br>
+                </ul>
+                </p>
+                <p class="card-p2">Por: R$ 7,50</p>
+                <button>Fazer Pedido</button>
+            </div>
+
+
+        </div>
+
+        <div class="cardapio-novidade">
+            <h1 class="tipo_cardapio">Novidade de Pascoa</h1>
+            <blockquote
+                cite="//www.flaticon.com/br/icones-gratis/coelho - Coelho ícones criados por Freepik - Flaticon">
+                <img src="icones/coelhinho-da-pascoa.png" alt="Novidade de Pascoa">
+            </blockquote>
+        </div>
+
+        <div class="container">
+            <div class="card">
+                <img src="imagem/ovo_trufado.jpg" alt="Ovo de Pascoa Trufado">
+                <h2>Ovo Trufado</h2>
+                <p class="card-p1">Delicioso Ovo de Pascoa Trufado com Recheio de:
+
+                <ul>
+                    <li>Leite Ninho c/ Nutella</li>
+                    <li>Maracujá</li>
+                    <li>Prestígio</li>
+                    <li>Maracujá</li>
+                </ul>
+                </p>
+                <p class="card-p2">250g - Por: R$ 50,00</p>
+                <p class="card-p3">500g - Por: R$ 70,00</p>
+                <button>Fazer Pedido</button>
+            </div>
+            <div class="card">
+                <img src="imagem/ovo_colher.jpg" alt="Ovo de Pascoa de Colher">
+                <h2>Ovo de Colher</h2>
+                <p class="card-p1">Delicioso Ovo de Pascoa de Colher com Recheio de:
+                <ul>
+                    <li>Leite Ninho c/ Nutella</li>
+                    <li>Maracujá</li>
+                    <li>Prestígio</li>
+                    <li>Maracujá</li>
+                </ul>
+                </p>
+                <p class="card-p2">250g - Por: R$ 60,00</p>
+                <p class="card-p3">500g - Por: R$ 78,00</p>
+                <button>Fazer Pedido</button>
+            </div>
+            <div class="card">
+                <img src="imagem/ovo_brownie.jpg" alt="Ovo de Pascoa de Colher - Brownie">
+                <h2>Ovo de Colher - Brownie</h2>
+                <p class="card-p1">Delicioso Ovo de Pascoa de Colher com Brownie:
+                <ul>
+                    <li>Chocolate</li>
+                    <li>Cocô</li>
+                    <li>Leite Ninho com Nutella</li>
+                    <br>
+                </ul>
+                </p>
+                <p class="card-p2">250g - Por: R$ 65,00</p>
+                <p class="card-p3">500g - Por: R$ 88,00</p>
+                <button>Fazer Pedido</button>
+            </div>
+
+        </div>
     </div>
+
+
+    <!-- Footer -->
+    
+    
+    <footer>
+        <div id="footer_content">
+            <div class="footer_contacts">
+                <h1>Logo</h1>
+                <p>It's all about your dreams</p>
+
+                <div class="footer_social_media">
+                    <a href="#" class="footer-link" id="instagram">
+                        <i class="fa-brands fa-instagram"></i> 
+                    </a>
+
+                    <a href="#" class="footer-link" id="facebook">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+
+                    <a href="#" class="footer-link" id="github">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+            <ul class="footer_list">
+                <li>
+                    <h3>blog</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Tech</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Adventures</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Music</a>
+                </li>
+            </ul>
+
+            <ul class="footer_list">
+                <li>
+                    <h3>Products</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">App</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Desktop</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Cloud</a>
+                </li>
+            </ul>
+
+            <div id="footer_subscribe">
+                <ul class="footer_list">
+                    <li>
+                        <h3>Contatos</h3>
+                    </li>
+                    <li>
+                        <p class="footer-link">gabrielazaroas@2020gmail.com</p>
+                    </li>
+                    <li>
+                        <p class="footer-link">16998250307</p>
+                    </li>
+                    <li>
+                        <p class="footer-link">Serrana, Rua Agenor Branco 160</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="footer_copyright">
+            &#169
+            2023 all rights reserv
+        </div>
+
+    </footer>
+
+
 
 </body>
 
