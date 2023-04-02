@@ -219,7 +219,7 @@ header {
     @media only screen and (max-width: 768px) {
       .container_meio_img {
         background-size: 100% 100%;
-        padding-bottom: 40%;
+        padding-bottom: 30%;
         margin-top: 15%;
       }
     }
@@ -556,7 +556,7 @@ header {
   @media only screen and (max-width: 768px) {
     .container_sorteio_meio {
       background-size: 100% 100%;
-      padding-bottom: 95%;
+      padding-bottom: 80%;
       margin-top: 15%;
     }
   }
