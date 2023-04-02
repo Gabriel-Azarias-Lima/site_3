@@ -241,7 +241,7 @@ header {
     @media screen and (max-width: 768px) {
       .container_meio_texto {
         font-size: 25px;
-        padding-top: 30%;
+        padding-top: 20%;
         padding-left: 49%;
       }
     }
@@ -556,7 +556,7 @@ header {
   @media only screen and (max-width: 768px) {
     .container_sorteio_meio {
       background-size: 100% 100%;
-      padding-bottom: 80%;
+      padding-bottom: 70%;
       margin-top: 15%;
     }
   }
