@@ -8,10 +8,8 @@
 body{
   font-family: 'EB Garamond', serif;
   background-image: url(../imagem/fundo_pagina.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  
+  background-size: contain;
+  justify-content: center;
 }
 
 
@@ -208,15 +206,6 @@ header {
       padding-bottom: 25%;
     }
 
-    .container_meio_img.active {
-      transform: scale(1.1);
-      transition: transform 0.5s ease-in-out;
-    }
-    
-    .container_meio_img.transition {
-      transition: transform 0.5s ease-in-out;
-    }
-
     /* Redimencionando Imagem container_meio_img */
     @media only screen and (max-width: 1280px) {
       .container_meio_img {
@@ -334,9 +323,16 @@ header {
   /* Cardápio */
 
   .container-cardapio{
+    background-image: url(../imagem/fundo-cardapio.jpg);
+    background-size: contain;
+    background-position: center;
+    padding-top: 100px;
+
+  }
+
+  .container-cardapio{
     margin-top: 100px;
     padding-top: 50px;
-    background-color: #e8a3c4;
     margin: 1rem;
     padding: 1rem;
     border-radius: 15px;
@@ -522,10 +518,24 @@ header {
 
   /* pagina sorteio */
 
+  .pg-2{
+    background-image: url(../imagem/fundo_pagina.jpg);
+    background-size: cover;
+    justify-content: center;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .pg-2 {
+      background-size: contain;
+    }
+  }
+
+  .container_sorteio_meio{
+    background-image: url(../imagem/sorteio.jpg);
+  }
 
   .container_sorteio_meio {
     width: 100%;
-    background-image: url(../imagem/sorteio.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -565,7 +575,7 @@ header {
     padding: 1rem;
     display: flex;
     justify-self: center;
-    background-color: #ffb5f0;
+    background-image: url(../imagem/fundo-sorteio.jpg);
     
   }
 
@@ -819,5 +829,10 @@ header {
 }
 
   /* Fim footer */
+
+
+
+
+  
 
 

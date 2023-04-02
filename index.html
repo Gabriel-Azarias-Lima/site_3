@@ -55,31 +55,7 @@
         <h1 class="container_meio_texto">A vida bem mais Feliz com um Docinho</h1>
     </div>
 
-    <script>
-        const containerMeioImg = document.querySelector('.container_meio_img');
-        let lastScrollY = window.scrollY;
 
-        function handleScroll() {
-            const scrollY = window.scrollY;
-            const elementTop = containerMeioImg.offsetTop;
-            const elementHeight = containerMeioImg.offsetHeight;
-
-            if (
-                scrollY > (elementTop - (elementHeight / 2)) &&
-                lastScrollY <= scrollY
-            ) {
-                containerMeioImg.classList.add('active');
-                containerMeioImg.classList.remove('transition');
-            } else {
-                containerMeioImg.classList.remove('active');
-                containerMeioImg.classList.add('transition');
-            }
-
-            lastScrollY = scrollY;
-        }
-
-        window.addEventListener('scroll', handleScroll);
-    </script>
 
 
 
@@ -102,12 +78,13 @@
     <div class="container-cardapio">
         <h1 class="cardapio-h1">CARDÁPIOS</h1>
 
-        <div class="cardapio-doces">
+        <div class="cardapio-doces" id="doces">
             <h1 class="tipo_cardapio">Doces</h1>
             <blockquote cite="https://www.flaticon.com/br/icones-gratis/queque-de-aniversario - Queque de aniversário ícones criados por Flat Icons - Flaticon">
                 <img src="icones/bolos-de-copo.png" alt="doces">
             </blockquote>
         </div>
+        
 
         <div class="container">
             <div class="card">
@@ -156,7 +133,7 @@
 
         </div>
 
-        <div class="cardapio-novidade">
+        <div class="cardapio-novidade" id="pascoa">
             <h1 class="tipo_cardapio">Novidade de Pascoa</h1>
             <blockquote
                 cite="//www.flaticon.com/br/icones-gratis/coelho - Coelho ícones criados por Freepik - Flaticon">
@@ -222,8 +199,8 @@
     <footer>
         <div id="footer_content">
             <div class="footer_contacts">
-                <h1>Logo</h1>
-                <p>It's all about your dreams</p>
+                <h1>Delícias da Léia</h1>
+
 
                 <div class="footer_social_media">
                     <a href="#" class="footer-link" id="instagram">
@@ -244,32 +221,70 @@
 
             <ul class="footer_list">
                 <li>
-                    <h3>blog</h3>
+                    <h3>Cardápios</h3>
                 </li>
                 <li>
-                    <a href="#" class="footer-link">Tech</a>
+                    <a href="#doces" class="footer-link">Doces</a>
                 </li>
+
+                <script>
+                    function scrollToDoces(event) {
+                      event.preventDefault();
+                      const docesSection = document.getElementById('doces');
+                      const yOffset = -70; // altura do cabeçalho (se necessário, ajuste de acordo com sua página)
+                      const y = docesSection.getBoundingClientRect().top + window.pageYOffset + yOffset;
+                  
+                      window.scrollTo({ top: y, behavior: 'smooth' });
+                    }
+                  
+                    const docesLink = document.querySelector('a[href="#doces"]');
+                    docesLink.addEventListener('click', scrollToDoces);
+                  </script>
+
                 <li>
-                    <a href="#" class="footer-link">Adventures</a>
+                    <a href="#pascoa" class="footer-link">Novidade de Pascoa</a>
                 </li>
-                <li>
-                    <a href="#" class="footer-link">Music</a>
-                </li>
+
+                <script>
+                    function scrollToDoces(event) {
+                      event.preventDefault();
+                      const pascoaSection = document.getElementById('pascoa');
+                      const yOffset = -70; // altura do cabeçalho (se necessário, ajuste de acordo com sua página)
+                      const y = pascoaSection.getBoundingClientRect().top + window.pageYOffset + yOffset;
+                  
+                      window.scrollTo({ top: y, behavior: 'smooth' });
+                    }
+                  
+                    const pascoaLink = document.querySelector('a[href="#pascoa"]');
+                    pascoaLink.addEventListener('click', scrollToDoces);
+                  </script>
             </ul>
+
+            
 
             <ul class="footer_list">
                 <li>
-                    <h3>Products</h3>
+                    <h3>Novidades</h3>
                 </li>
                 <li>
-                    <a href="#" class="footer-link">App</a>
+                    <a href="sorteio.html#cesta" class="footer-link">Sorteio de Pascoa</a>
                 </li>
-                <li>
-                    <a href="#" class="footer-link">Desktop</a>
-                </li>
-                <li>
-                    <a href="#" class="footer-link">Cloud</a>
-                </li>
+
+                <script>
+                    function scrollToDoces(event) {
+                      event.preventDefault();
+                      const cestaSection = document.getElementById('cesta');
+                      const yOffset = -70; // altura do cabeçalho (se necessário, ajuste de acordo com sua página)
+                      const y = cestaSection.getBoundingClientRect().top + window.pageYOffset + yOffset;
+                  
+                      window.scrollTo({ top: y, behavior: 'smooth' });
+                    }
+                  
+                    const cestaLink = document.querySelector('a[href="#cesta"]');
+                    cestaLink.addEventListener('click', scrollToDoces);
+                  </script>
+                
+
             </ul>
 
             <div id="footer_subscribe">
@@ -294,7 +309,6 @@
             &#169
             2023 all rights reserv
         </div>
-
     </footer>
 
 

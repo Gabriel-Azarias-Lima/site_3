@@ -14,8 +14,8 @@
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
 
+<body class="pg-2">
     <header>
         <div class="container_header">
             <a href="index.html"><img class="logo" src="icones/chefe-de-cozinha.png" alt="" width="100px"></a>
@@ -25,7 +25,7 @@
         </div>
 
         <div class="header_redes">
-            <h2>Redes Sociais</h2>
+            <h2>Delícias da Léia</h2>
 
             <div class="redes">
                 <a href="#" class="footer-link" id="instagram">
@@ -53,7 +53,7 @@
 
 
 
-    <div class="sorteio">
+    <div class="sorteio" id="cesta">
         <h1>Sobre o Sorteio</h1>
     </div>
 
@@ -67,7 +67,7 @@
                 <li> 1 Ovo Trufado 500g</li>
                 <li> 2 ovos de colher</li>
                 <li> 5 bombons </li>
-                <li> uma caixa de bombom </li>
+                <li> 1 caixa de bombom </li>
             </ul>
             <button class="btn">Comprar Rifa</button>
         </div>
@@ -80,8 +80,7 @@
     <footer>
         <div id="footer_content">
             <div class="footer_contacts">
-                <h1>Logo</h1>
-                <p>It's all about your dreams</p>
+                <h1>Delícias da Léia</h1>
 
                 <div class="footer_social_media">
                     <a href="#" class="footer-link" id="instagram">
@@ -102,32 +101,69 @@
 
             <ul class="footer_list">
                 <li>
-                    <h3>blog</h3>
+                    <h3>Cardápios</h3>
                 </li>
                 <li>
-                    <a href="#" class="footer-link">Tech</a>
+                    <a href="index.html#doces" class="footer-link">Doces</a>
                 </li>
+
+                <script>
+                    function scrollToDoces(event) {
+                      event.preventDefault();
+                      const docesSection = document.getElementById('doces');
+                      const yOffset = -70; // altura do cabeçalho (se necessário, ajuste de acordo com sua página)
+                      const y = docesSection.getBoundingClientRect().top + window.pageYOffset + yOffset;
+                  
+                      window.scrollTo({ top: y, behavior: 'smooth' });
+                    }
+                  
+                    const docesLink = document.querySelector('a[href="#doces"]');
+                    docesLink.addEventListener('click', scrollToDoces);
+                  </script>
+
                 <li>
-                    <a href="#" class="footer-link">Adventures</a>
+                    <a href="index.html#pascoa" class="footer-link">Novidade de Pascoa</a>
                 </li>
-                <li>
-                    <a href="#" class="footer-link">Music</a>
-                </li>
+
+                <script>
+                    function scrollToDoces(event) {
+                      event.preventDefault();
+                      const pascoaSection = document.getElementById('pascoa');
+                      const yOffset = -70; // altura do cabeçalho (se necessário, ajuste de acordo com sua página)
+                      const y = pascoaSection.getBoundingClientRect().top + window.pageYOffset + yOffset;
+                  
+                      window.scrollTo({ top: y, behavior: 'smooth' });
+                    }
+                  
+                    const pascoaLink = document.querySelector('a[href="#pascoa"]');
+                    pascoaLink.addEventListener('click', scrollToDoces);
+                  </script>
             </ul>
+
+            
 
             <ul class="footer_list">
                 <li>
-                    <h3>Products</h3>
+                    <h3>Novidades</h3>
                 </li>
                 <li>
-                    <a href="#" class="footer-link">App</a>
+                    <a href="#cesta" class="footer-link">Sorteio de Pascoa</a>
                 </li>
-                <li>
-                    <a href="#" class="footer-link">Desktop</a>
-                </li>
-                <li>
-                    <a href="#" class="footer-link">Cloud</a>
-                </li>
+
+                <script>
+                    function scrollToDoces(event) {
+                      event.preventDefault();
+                      const cestaSection = document.getElementById('cesta');
+                      const yOffset = -70; // altura do cabeçalho (se necessário, ajuste de acordo com sua página)
+                      const y = cestaSection.getBoundingClientRect().top + window.pageYOffset + yOffset;
+                  
+                      window.scrollTo({ top: y, behavior: 'smooth' });
+                    }
+                  
+                    const cestaLink = document.querySelector('a[href="#cesta"]');
+                    cestaLink.addEventListener('click', scrollToDoces);
+                  </script>
+
             </ul>
 
             <div id="footer_subscribe">
@@ -152,7 +188,6 @@
             &#169
             2023 all rights reserv
         </div>
-
     </footer>
 
 
